@@ -299,7 +299,6 @@
 			form.addEventListener('submit', e => {
 			  e.preventDefault()
 			  fetch(scriptURL, { method: 'POST', body: new FormData(form)}) 
-                .reset()    
 				.then(response => alert("Success!Your response has been recorded."))
 				.catch(error => alert("Error!"))
 			})
