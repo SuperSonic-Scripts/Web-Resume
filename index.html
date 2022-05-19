@@ -301,6 +301,10 @@
 			  fetch(scriptURL, { method: 'POST', body: new FormData(form)}) 
 				.then(response => alert("Success!Your response has been recorded."))
 				.catch(error => alert("Error!"))
+				 document.getElementById('Name').value = "";
+				 document.getElementById('Email').value = "";
+				 document.getElementById('Subject').value = "";
+				 document.getElementById('Message').value = "";
 			})
 		  </script>
 
